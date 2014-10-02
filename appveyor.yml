@@ -1,0 +1,17 @@
+version: 1.0.{build}
+
+# branches to build
+branches:
+  only:
+    - master
+
+# clone directory
+clone_folder: c:\samp
+
+# install (after repo cloning)
+install:
+  - git submodule update -q --init --recursive
+
+# custom build scripts
+build_script:
+  - cmd: c:/samp/bin/compiler/pawncc.exe "src\gamemodes\mode.pwn" -o"src\gamemodes\mode.amx" -i"./src/includes" "-;" "-("
