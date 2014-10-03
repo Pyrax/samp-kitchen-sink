@@ -15,7 +15,7 @@ Table of contents
 About
 -----
 
-SA-MP Kitchen Sink is a GitHub project to create a more clearly and standardized structure for new SA-MP projects - whether it is a filterscript or a gamemode.
+SA-MP Kitchen Sink is a GitHub project providing a skeleton for creating new San Andreas Multiplayer (SA-MP) projects - whether it is a gamemode or just a single filterscript.
 
 
 
