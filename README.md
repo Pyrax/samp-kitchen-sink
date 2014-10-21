@@ -1,5 +1,6 @@
 SA-MP Kitchen Sink
 ==================
+[![Build status](https://ci.appveyor.com/api/projects/status/9mv1l2n8oku90ao3)](https://ci.appveyor.com/project/Pyrax/samp-kitchen-sink)
 
 
 
