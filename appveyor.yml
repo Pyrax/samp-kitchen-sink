@@ -14,4 +14,4 @@ install:
 
 # custom build scripts
 build_script:
-  - cmd: c:/samp/bin/compiler/pawncc.exe "src\gamemodes\mode.pwn" -o"src\gamemodes\mode.amx" -i"./src/includes" "-;" "-("
+  - cmd: c:/samp/bin/compile.bat
