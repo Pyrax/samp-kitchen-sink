@@ -1,7 +1,7 @@
-@echo off 
+@echo off
 setlocal enableDelayedExpansion 
 
-for /F %%f in ('dir /B/D ..\src\gamemodes') do (
-  set FILENAME=..\src\gamemodes\%%f
-  start "" compiler/pawncc.exe "../src/gamemodes/%%f" -o"src\gamemodes\mode.amx" -i"./src/includes" "-;" "-("
+@echo on
+for /F %%G in ('dir /B/D ..\src\gamemodes\*.pwn') do (
+    "compiler\pawncc.exe" "..\src\gamemodes\%%G" -o"..\src\gamemodes\%%~nG.amx" -i"..\src\includes" "-;" "-("
 )
