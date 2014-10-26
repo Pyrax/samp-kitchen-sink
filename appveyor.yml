@@ -14,4 +14,4 @@ install:
 
 # custom build scripts
 build_script:
-  - cmd: c:/samp/bin/compile.bat
+  - cmd: c:\samp\bin\compile.bat
