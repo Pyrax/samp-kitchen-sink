@@ -12,6 +12,6 @@ clone_folder: c:\samp
 install:
   - git submodule update -q --init --recursive
 
-# custom build scripts
+# custom build script
 build_script:
-  - cmd: c:\samp\bin\compile.bat
+  - cmd: cd c:\samp\bin && compile.bat
