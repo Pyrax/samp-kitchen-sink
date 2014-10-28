@@ -14,3 +14,7 @@ install:
       - master
     build_script:
       - cmd: cd c:\samp\bin && compile.bat
+
+-
+  build_script:
+    - cmd: cd c:\samp\bin && compile.bat
