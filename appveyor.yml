@@ -13,7 +13,6 @@
   branches:
     only:
       - master
-    except:
   build_script:
     - cmd: cd c:\samp\bin && compile.bat
 
