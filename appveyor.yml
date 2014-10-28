@@ -1,24 +1,26 @@
-version: 1.{build}
-
-# clone directory
-clone_folder: c:\samp
-
-# install (after repo cloning)
-install:
-  - git submodule update -q --init --recursive
-
+-
+  version: 1.{build}
+  
+  # clone directory
+  clone_folder: c:\samp
+  
+  # install (after repo cloning)
+  install:
+    - git submodule update -q --init --recursive
+  
 # production builds on master branch
 -
   branches:
     only:
       - master
-    build_script:
-      - cmd: cd c:\samp\bin && compile.bat
+    except:
+  build_script:
+    - cmd: cd c:\samp\bin && compile.bat
 
 # other branches are executed in the development environment
 -
   branches:
     except:
       - master
-    build_script:
-      - cmd: cd c:\samp\bin && compile.bat
+  build_script:
+    - cmd: cd c:\samp\bin && compile.bat
