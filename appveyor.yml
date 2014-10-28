@@ -14,6 +14,18 @@
     - git submodule update -q --init --recursive
   build_script:
     - cmd: cd c:\samp\bin && compile.bat
+  
+  # deploy script to your server after it has been built
+  deploy:
+    - provider: FTP
+      server:
+      username:
+      password:
+      folder:
+      enable_ssl: false
+      active_mode: false
+      artifact:
+      application:
 
 # other branches are executed in the development environment
 -
