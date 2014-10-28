@@ -8,15 +8,14 @@
   install:
     - git submodule update -q --init --recursive
 
+# production builds on master branch
 -
-  # production builds on master branch
-  -
-    branches:
-      only:
-        - master
-      build_script:
-        - cmd: cd c:\samp\bin && compile.bat
-  
-  -
+  branches:
+    only:
+      - master
     build_script:
       - cmd: cd c:\samp\bin && compile.bat
+
+-
+  build_script:
+    - cmd: cd c:\samp\bin && compile.bat
