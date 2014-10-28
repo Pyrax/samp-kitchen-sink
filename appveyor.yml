@@ -1,10 +1,5 @@
 version: 1.0.{build}
 
-# branches to build
-branches:
-  only:
-    - master
-
 # clone directory
 clone_folder: c:\samp
 
@@ -12,6 +7,10 @@ clone_folder: c:\samp
 install:
   - git submodule update -q --init --recursive
 
-# custom build script
-build_script:
-  - cmd: cd c:\samp\bin && compile.bat
+# production builds on master branch
+-
+  branches:
+    only:
+      - master
+    build_script:
+      - cmd: cd c:\samp\bin && compile.bat
