@@ -21,9 +21,9 @@
   
   artifacts:
     - path: c:\samp\bin\server
-      name: 'server-files'
+      name: serverfiles
     - path: c:\tools\scanner\web
-      name: 'web-files'
+      name: webfiles
   # deploy script to your server after it has been built
   deploy:
     - provider: FTP
@@ -32,7 +32,7 @@
       password:
       folder:
       enable_ssl: false
-      artifact: 'server-files'
+      artifact: serverfiles
       
     - provider: FTP
       server:
@@ -40,7 +40,7 @@
       password:
       folder:
       enable_ssl: false
-      artifact: 'web-files'
+      artifact: webfiles
 
 # other branches are executed in the development environment
 -
