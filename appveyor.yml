@@ -18,7 +18,7 @@
     - cd c:\samp\bin && compile.bat
   after_build:
     - cd c:\tools\scanner && node "bin\scan-dir.js" "c:\samp\src\gamemodes" && node "bin\scan-dir.js" "c:\samp\src\filterscripts"
-    - dir ./
+    - dir .\
   
   artifacts:
     - path: samp\bin\server
