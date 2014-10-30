@@ -23,25 +23,25 @@
   artifacts:
     - path: bin\server
       name: serverfiles
-    - path: web
+    - path: ..\tools\scanner\web
       name: webfiles
   # deploy script to your server after it has been built
-  deploy:
-    - provider: FTP
-      server:
-      username:
-      password:
-      folder:
-      enable_ssl: false
-      artifact: serverfiles
-      
-    - provider: FTP
-      server:
-      username:
-      password:
-      folder:
-      enable_ssl: false
-      artifact: webfiles
+  #deploy:
+  #  - provider: FTP
+  #    server:
+  #    username:
+  #    password:
+  #    folder:
+  #    enable_ssl: false
+  #    artifact: serverfiles
+  #    
+  #  - provider: FTP
+  #    server:
+  #    username:
+  #    password:
+  #    folder:
+  #    enable_ssl: false
+  #    artifact: webfiles
 
 # other branches are executed in the development environment
 -
