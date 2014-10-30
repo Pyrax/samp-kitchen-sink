@@ -21,9 +21,9 @@
     - dir .\
   
   artifacts:
-    - path: samp\bin\server
+    - path: bin\server
       name: serverfiles
-    - path: tools\scanner\web
+    - path: web
       name: webfiles
   # deploy script to your server after it has been built
   deploy:
