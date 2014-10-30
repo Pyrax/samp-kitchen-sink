@@ -20,9 +20,9 @@
     - cd c:\tools\scanner && node "bin\scan-dir.js" "c:\samp\src\gamemodes" && node "bin\scan-dir.js" "c:\samp\src\filterscripts"
   
   artifacts:
-    - path: c:\samp\bin\server
+    - path: "c:\samp\bin\server"
       name: serverfiles
-    - path: c:\tools\scanner\web
+    - path: "c:\tools\scanner\web"
       name: webfiles
   # deploy script to your server after it has been built
   deploy:
