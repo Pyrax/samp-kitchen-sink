@@ -13,17 +13,16 @@
   install:
     - git submodule update -q --init --recursive
     - ps: Install-Product node "0.10"
-    - git clone -q https://github.com/Pyrax/node-pawn-scanner.git c:\tools\scanner
+    - git clone -q https://github.com/Pyrax/node-pawn-scanner.git c:\samp\tools\scanner
   build_script:
     - cd c:\samp\bin && compile.bat
   after_build:
-    - cd c:\tools\scanner && node "bin\scan-dir.js" "c:\samp\src\gamemodes" && node "bin\scan-dir.js" "c:\samp\src\filterscripts"
-    - dir .\
+    - cd c:\samp\tools\scanner && node "bin\scan-dir.js" "c:\samp\src\gamemodes" && node "bin\scan-dir.js" "c:\samp\src\filterscripts"
   
   artifacts:
     - path: bin\server
       name: serverfiles
-    - path: ..\tools\scanner\web
+    - path: tools\scanner\web
       name: webfiles
   # deploy script to your server after it has been built
   #deploy:
