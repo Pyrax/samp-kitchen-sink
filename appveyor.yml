@@ -25,14 +25,14 @@
     - path: tools\scanner\web
       name: webfiles
   # deploy script to your server after it has been built
-  #deploy:
-  #  - provider: FTP
-  #    server:
-  #    username:
-  #    password:
+  deploy:
+    - provider: FTP
+      server: 178.33.168.68
+      username: tVR2oHpGse5AUzlcZAvgAA==
+      password: itEa/+YblFNt98JnaH71TA==
   #    folder:
-  #    enable_ssl: false
-  #    artifact: serverfiles
+      enable_ssl: false
+      artifact: serverfiles
   #    
   #  - provider: FTP
   #    server:
