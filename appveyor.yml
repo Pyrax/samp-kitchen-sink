@@ -28,8 +28,9 @@
   deploy:
     - provider: FTP
       server: 178.33.168.68
-      username: tVR2oHpGse5AUzlcZAvgAA==
-      password: itEa/+YblFNt98JnaH71TA==
+      username: samp4841
+      password:
+        secure: itEa/+YblFNt98JnaH71TA==
   #    folder:
       enable_ssl: false
       artifact: serverfiles
