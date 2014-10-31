@@ -31,7 +31,6 @@
     web_ftp_password: 0
   
   deploy_script: cd c:\samp\bin\appveyor && node "deploy.js"
-  deploy: off
   
   #artifacts:
   #  - path: bin\server
