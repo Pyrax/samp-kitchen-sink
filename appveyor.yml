@@ -13,7 +13,6 @@
   install:
     - git submodule update -q --init --recursive
     - ps: Install-Product node "0.10"
-    - npm install
     - npm install -g ftp
     - git clone -q https://github.com/Pyrax/node-pawn-scanner.git c:\samp\tools\scanner
   build_script:
