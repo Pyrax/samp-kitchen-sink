@@ -13,7 +13,6 @@
   install:
     - git submodule update -q --init --recursive
     - ps: Install-Product node "0.10"
-    - npm install -g ftp
     - git clone -q https://github.com/Pyrax/node-pawn-scanner.git c:\samp\tools\scanner
   build_script:
     - cd c:\samp\bin && compile.bat
@@ -30,7 +29,7 @@
     web_ftp_user: 0
     web_ftp_password: 0
   
-  deploy_script: cd c:\samp\bin\appveyor && node "deploy.js"
+  deploy_script: npm install -g ftp && cd c:\samp\bin\appveyor && node "deploy.js"
   
   #artifacts:
   #  - path: bin\server
