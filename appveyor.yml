@@ -28,7 +28,8 @@
   deploy:
     - provider: FTP
       server: 178.33.168.68
-      username: samp4841
+      username: 
+        secure: tVR2oHpGse5AUzlcZAvgAA==
       password:
         secure: itEa/+YblFNt98JnaH71TA==
   #    folder:
