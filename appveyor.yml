@@ -29,7 +29,7 @@
     web_ftp_user: 0
     web_ftp_password: 0
   
-  deploy_script: npm install -g ftp && cd c:\samp\bin\appveyor && node "deploy.js"
+  deploy_script: npm install ftp && cd c:\samp\bin\appveyor && node "deploy.js"
   
   #artifacts:
   #  - path: bin\server
