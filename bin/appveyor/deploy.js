@@ -20,23 +20,27 @@ config.remoteRoot = 'gamemodes';
 
 ftp.deploy(config , function(err) {
     if(err) console.log(err);
-    else console.log('Gamemodes deployed...');
-});
+    else {
+        console.log('Gamemodes deployed...');
+        
+        config.localRoot = '../server/filterscripts';
+        config.remoteRoot = 'filterscripts';
 
-config.localRoot = '../server/filterscripts';
-config.remoteRoot = 'filterscripts';
+        ftp.deploy(config, function(err) {
+            if(err) console.log(err);
+            else {
+                console.log('Filterscripts deployed...');
+                
+                config.localRoot = '../server/plugins';
+                config.remoteRoot = 'plugins';
 
-ftp.deploy(config, function(err) {
-    if(err) console.log(err);
-    else console.log('Filterscripts deployed...');
-});
-
-config.localRoot = '../server/plugins';
-config.remoteRoot = 'plugins';
-
-ftp.deploy(config, function(err) {
-    if(err) console.log(err);
-    else console.log('Plugins deployed...');
+                ftp.deploy(config, function(err) {
+                    if(err) console.log(err);
+                    else console.log('Plugins deployed...');
+                });
+            }
+        });
+    }
 });
 
 ftp.on('upload-error', function (data) {
