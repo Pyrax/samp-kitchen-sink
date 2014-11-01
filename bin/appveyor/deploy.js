@@ -18,6 +18,7 @@ ftp.connect({
 
 function DeployFiles() {
     IterateFiles('..\\server', function(file) {
+        console.log('Trying to upload ' + file '\nto ' + path.resolve(file, '..'));
         ftp.put(file, path.resolve(file, '..'), function(err) {
             if(err) throw err;
         });
