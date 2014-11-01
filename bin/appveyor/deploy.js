@@ -17,7 +17,7 @@ ftp.connect({
 });
 
 function DeployFiles() {
-    IterateFiles('c:\samp\bin\server', function(file) {
+    IterateFiles('..\server', function(file) {
         ftp.put(file, path.resolve(file, '..'), function(err) {
             if(err) throw err;
         });
