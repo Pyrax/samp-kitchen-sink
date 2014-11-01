@@ -41,7 +41,7 @@ function IterateFiles(dir, cb) {
                 if(err) throw err;
                 
                 if(stats.isDirectory()) {
-                    return iterateFiles(dir, cb);
+                    return IterateFiles(dir, cb);
                 } else if(stats.isFile()) {
                     cb(file);
                 }
