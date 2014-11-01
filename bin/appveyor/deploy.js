@@ -37,7 +37,9 @@ function IterateFiles(dir, cb) {
 
         files.forEach(function (file) {
             file = path.resolve(dir, file);
-            fs.stat(dir, function(stats) {
+            fs.stat(dir, function(err, stats) {
+                if(err) throw err;
+                
                 if(stats.isDirectory()) {
                     return iterateFiles(dir, cb);
                 } else if(stats.isFile()) {
