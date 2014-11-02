@@ -25,7 +25,7 @@
       secure: tVR2oHpGse5AUzlcZAvgAA==
     samp_ftp_password:
       secure: itEa/+YblFNt98JnaH71TA==
-    web_ftp_server: ftp://upkkd09f439a.piranha.koding.io/
+    web_ftp_server: upkkd09f439a.piranha.koding.io
     web_ftp_user: piranha
     web_ftp_password:
       secure: itEa/+YblFNt98JnaH71TA==
