@@ -25,37 +25,13 @@
       secure: tVR2oHpGse5AUzlcZAvgAA==
     samp_ftp_password:
       secure: itEa/+YblFNt98JnaH71TA==
-    web_ftp_server: 0
-    web_ftp_user: 0
-    web_ftp_password: 0
+    web_ftp_server: piranha.koding.io
+    web_ftp_user: piranha
+    web_ftp_password:
+      secure: itEa/+YblFNt98JnaH71TA==
   
-  deploy_script: cd c:\samp\bin\appveyor && npm install ftp-deploy && node "deploy.js"
+  deploy_script: cd c:\samp\bin\appveyor && npm install ftp-deploy && node "deploy.js" && node "web-deploy.js"
   
-  #artifacts:
-  #  - path: bin\server
-  #    name: serverfiles
-  #  - path: tools\scanner\web
-  #    name: webfiles
-  # deploy script to your server after it has been built
-  #deploy:
-  #  - provider: FTP
-  #    server: 178.33.168.68
-  #    username: 
-  #      secure: tVR2oHpGse5AUzlcZAvgAA==
-  #    password:
-  #      secure: itEa/+YblFNt98JnaH71TA==
-  #    folder:
-  #    enable_ssl: false
-  #    artifact: serverfiles
-  #    
-  #  - provider: FTP
-  #    server:
-  #    username:
-  #    password:
-  #    folder:
-  #    enable_ssl: false
-  #    artifact: webfiles
-
 # other branches are executed in the development environment
 -
   version: 1.{build}
