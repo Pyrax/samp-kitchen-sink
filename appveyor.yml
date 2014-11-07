@@ -25,12 +25,13 @@
       secure: tVR2oHpGse5AUzlcZAvgAA==
     samp_ftp_password:
       secure: itEa/+YblFNt98JnaH71TA==
-    web_ftp_server: 54.173.60.166
-    web_ftp_user: piranha
+    web_ftp_server: piranhadev.comuf.com
+    web_ftp_user: 
+      secure: J7QG+hf5zwisk3Vdn9MoaA==
     web_ftp_password:
-      secure: itEa/+YblFNt98JnaH71TA==
+      secure: a6nleO+kn3+jaPSEvxAmXg==
   
-  deploy_script: cd c:\samp\bin\appveyor && npm install ftp-deploy && node "deploy.js" && node "deploy.js"
+  deploy_script: cd c:\samp\bin\appveyor && npm install ftp-deploy && node "deploy.js" && node "web-deploy.js"
   
 # other branches are executed in the development environment
 -

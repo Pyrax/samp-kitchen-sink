@@ -16,7 +16,7 @@ var config = {
 };
 
 config.localRoot = '../../tools/scanner/web';
-config.remoteRoot = 'Web';
+config.remoteRoot = 'public_html';
 
 ftp.deploy(config , function(err) {
     if(err) console.log(err);
