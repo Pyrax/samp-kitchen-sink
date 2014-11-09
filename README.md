@@ -7,9 +7,9 @@ SA-MP Kitchen Sink
 Table of contents
 -----------------
 
-1. About
-2. Getting started
-3. Automatic builds with AppVeyor
+1. [About](#about)
+2. [Getting started](#getting-started)
+3. [Automatic builds with AppVeyor](#automatic-builds-with-appveyor)
 
 
 
