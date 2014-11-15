@@ -16,8 +16,8 @@
     - git clone -q https://github.com/Pyrax/node-pawn-scanner.git c:\samp\tools\scanner
   build_script:
     - cd c:\samp\bin && compile.bat
-  after_build:
-    - cd c:\samp\tools\scanner && node "bin\scan-dir.js" "c:\samp\src\gamemodes" && node "bin\scan-dir.js" "c:\samp\src\filterscripts"
+  #after_build:
+   # - cd c:\samp\tools\scanner && node "bin\scan-dir.js" "c:\samp\src\gamemodes" && node "bin\scan-dir.js" "c:\samp\src\filterscripts"
   
   environment:
     samp_ftp_server: 178.33.168.68
