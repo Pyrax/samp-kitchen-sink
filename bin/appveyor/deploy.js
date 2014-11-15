@@ -26,7 +26,7 @@ ftp.deploy(config , function(err) {
         config.localRoot = '../server/filterscripts';
         config.remoteRoot = 'filterscripts';
 
-        /*ftp.deploy(config, function(err) {
+        ftp.deploy(config, function(err) {
             if(err) console.log(err);
             else {
                 console.log('Filterscripts deployed...');
@@ -34,12 +34,12 @@ ftp.deploy(config , function(err) {
                 config.localRoot = '../server/plugins';
                 config.remoteRoot = 'plugins';
 
-                //ftp.deploy(config, function(err) {
-                //    if(err) console.log(err);
-                //    else console.log('Plugins deployed...');
-                //});
+                ftp.deploy(config, function(err) {
+                    if(err) console.log(err);
+                    else console.log('Plugins deployed...');
+                });
             }
-        });*/
+        });
     }
 });
 
