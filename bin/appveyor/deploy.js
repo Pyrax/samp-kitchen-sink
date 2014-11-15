@@ -45,7 +45,7 @@ ftp.connect(function() {
         }
     });*/
     
-    ftp.upload(['../server/gamemodes/**'], '/gamemodes', {}, function(result) {
+    ftp.upload(['../server/gamemodes/**'], '/gamemodes', { baseDir: 'gamemodes' }, function(result) {
         console.log('Gamemodes deployed... (' + JSON.stringify(result) + ')');
     });
 });
