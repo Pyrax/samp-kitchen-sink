@@ -13,7 +13,7 @@ var config = {
 };
 
 var ftp = new Client(config, {
-    overwrite: all
+    overwrite: 'all'
 });
 
 config.localRoot = '../server/gamemodes';
