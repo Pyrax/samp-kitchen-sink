@@ -31,7 +31,7 @@
     web_ftp_password:
       secure: a6nleO+kn3+jaPSEvxAmXg==
   
-  deploy_script: cd c:\samp\bin && npm install ftp-client && node "appveyor\deploy.js"
+  deploy_script: cd c:\samp\bin && npm install ftp-deploy && node "appveyor\deploy.js"
   
 # other branches are executed in the development environment
 -
