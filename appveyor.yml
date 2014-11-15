@@ -4,7 +4,7 @@
     only:
       - master
   
-  version: 1.{build}
+  version: 2.{build}
   
   # clone directory
   clone_folder: c:\samp
